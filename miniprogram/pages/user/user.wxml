@@ -10,8 +10,15 @@
       style="background-image: url({{avatarUrl}})"
       size="default"
     ></button>
-    <text>点击登录</text>
+    <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="userinfo-text" hover-class="none">{{userInfo.nickName}}</button>
   </view>
-
+  <view class="page_bd">
+    <mp-cells>
+      <mp-cell link value="无hover效果">
+        <image slot="icon" src="{{icon}}" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+      </mp-cell>
+    </mp-cells>
+  </view>
+  
 
 </view>

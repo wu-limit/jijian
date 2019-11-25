@@ -3,8 +3,10 @@ const app = getApp()
 
 Page({
   data: {
-    avatarUrl: './user-unlogin.png',
-    userInfo: {},
+    avatarUrl: '../../images/user-unlogin.png',
+    userInfo: {
+      nickName: '点击登录'
+    },
     logged: false,
     takeSession: false,
     requestResult: ''

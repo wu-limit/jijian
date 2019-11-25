@@ -8,11 +8,9 @@ page {
 }
 
 .userinfo, .uploader, .tunnel {
-  margin-top: 40rpx;
-  height: 140rpx;
+  height: 300rpx;
   width: 100%;
-  background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #009bdb;
   border-left: none;
   border-right: none;
   display: flex;
@@ -21,21 +19,28 @@ page {
   transition: all 300ms ease;
 }
 
-.userinfo {
-  padding-left: 120rpx;
+.userinfo{
+  display: flex;
+  flex-direction: column;
+}
+
+.userinfo-text{
+  text-align: center;
+  color: #fff;
+  font-size: 28rpx;
 }
 
 .userinfo-avatar {
-  width: 100rpx;
-  height: 100rpx;
+  width: 120rpx;
+  height: 120rpx;
   margin: 20rpx;
   border-radius: 50%;
   background-size: cover;
-  background-color: white;
+  background-color: #fff;
 }
 
 .userinfo-avatar[size] {
-  width: 100rpx;
+  width: 120rpx;
 }
 
 
@@ -150,4 +155,8 @@ page {
   font-size: 24rpx;
   line-height: 36rpx;
   word-break: break-all;
+}
+
+button:not([size='mini']) {
+  min-height: 48px;
 }
