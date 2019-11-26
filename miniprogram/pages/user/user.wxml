@@ -3,22 +3,18 @@
 
   <!-- 用户 openid -->
   <view class="userinfo">
-    <button 
-      open-type="getUserInfo" 
-      bindgetuserinfo="onGetUserInfo"
-      class="userinfo-avatar"
-      style="background-image: url({{avatarUrl}})"
-      size="default"
-    ></button>
+    <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="userinfo-avatar" style="background-image: url({{avatarUrl}})" size="default"></button>
     <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="userinfo-text" hover-class="none">{{userInfo.nickName}}</button>
   </view>
-  <view class="page_bd">
-    <mp-cells>
-      <mp-cell link value="无hover效果">
-        <image slot="icon" src="{{icon}}" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
-      </mp-cell>
-    </mp-cells>
-  </view>
-  
-
+  <mp-cells>
+    <mp-cell link url="/pages/im/im" value="车辆管理">
+      <image slot="icon" src="/images/car.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </mp-cell>
+    <mp-cell link url="/pages/im/im" value="关于我们">
+      <image slot="icon" src="/images/about.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </mp-cell>
+    <mp-cell link url="/pages/im/im" value="设置中心">
+      <image slot="icon" src="/images/setting.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </mp-cell>
+  </mp-cells>
 </view>
