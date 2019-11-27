@@ -7,7 +7,7 @@
     <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="userinfo-text" hover-class="none">{{userInfo.nickName}}</button>
   </view>
   <mp-cells>
-    <mp-cell link url="/pages/im/im" value="车辆管理1">
+    <mp-cell link url="/pages/im/im" value="车辆管理">
       <image slot="icon" src="/images/car.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
     </mp-cell>
     <mp-cell link url="/pages/im/im" value="关于我们">
